@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>Create 404 Error Page in Blogger.</title>
+</head>
+<body>
+<script type='text/javascript'>
+;
+
+function tvbcodegen(){
+var Contacturl = document.getElementsByName("Contacturl")[0].value
+var blogurl = document.getElementsByName("blogurl")[0].value
+var widget=document.getElementsByName("widget.content")[0];
+widget.value = "<div class='TVB-404-box'>\n";
+widget.value += "<p style='line-height: 30px'>\n";
+widget.value += "<strong>\n";
+widget.value += "<font color='#ff0000' size='6'>Oops!<\/font>\n";
+widget.value += "<font size='4' color='#666666'>\n";
+widget.value += "Looks like you either clicked a broken link or a Page that no more exits.\n";
+widget.value += "<\/font>\n";
+widget.value += "<\/strong>\n";
+widget.value += "<\/p>\n";
+widget.value += "<br\/><br\/><br\/>\n";
+widget.value += "<p align='center'>\n";
+widget.value += "<font color='#a32b33' style='font-size: 150px'>\n";
+widget.value += "<strong>404<\/strong>\n";
+widget.value += "<\/font>\n";
+widget.value += "<\/p>\n";
+widget.value += "<p>&#160;<\/p>\n";
+widget.value += "<p align='center'\/>\n";
+widget.value += "<p align='center'>\n";
+widget.value += "<font size='5'>Page Not Found!<\/font>\n";
+widget.value += "<\/p>\n ";
+widget.value += "<p style='line-height: 30px'>\n";
+widget.value += "<strong>\n";
+widget.value += "<font color='#666666'>\n";
+widget.value += "Kindly do one of the followings:\n";
+widget.value += "<\/font>\n";
+widget.value += "<\/strong>\n";
+widget.value += "<\/p>\n";
+widget.value += "<ol style='line-height: 25px'>\n";
+widget.value += "<li><a href='javascript:history.go(-1)'>&#171; Go Back<\/a><\/li>\n";
+widget.value += "<li>Go To Homepage by <a href='"+ blogurl +"'>Clicking Here<\/a><\/li>\n";
+widget.value += "<li>Report the Problem to us by <a href='"+ Contacturl +"'>Clicking Here<\/a>&#160;&#160;&#160; (<em>This will help us serve you even better<\/em><\/li>\n";
+widget.value += "<li>Use the below search to find what you need.<br\/><\/li>\n";
+widget.value += "<\/ol>\n";
+widget.value += "<center>\n";
+widget.value += "<div id=\"tvb-searchbox\">\n";
+widget.value += "<form id=\"tvb-searchform\" action=\"\/search\" method=\"get\">\n";
+widget.value += "<input type=\"text\" id=\"s\" name=\"q\" value=\"Search...\" onfocus='if (this.value == \"Search...\") {this.value = \"\"}' onblur='if (this.value == \"\") {this.value = \"Search...\";}'\/>\n";
+widget.value += "<input type=\"image\" src=\"http:\/\/img1.blogblog.com\/img\/blank.gif\" id=\"sbutton\" \/>\n";
+widget.value += "<\/form>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/center>\n";
+widget.value += "<\/div>";
+}
+</script>
+
+<script type='text/javascript'>
+;
+
+function tvbcssgen(){
+
+widget1=document.getElementsByName("widget.csscontent")[0];
+widget1.value = "<b:if cond='data:blog.pageType == &quot;error_page&quot;'>\n";
+widget1.value += "<style type='text\/css'>\n";
+widget1.value += "#blog-pager {\n";
+widget1.value += "text-align: center;\n";
+widget1.value += "display:none;\n";
+widget1.value += "}\n";
+widget1.value += ".status-msg-wrap {\n";
+widget1.value += "font-size: 100%;\n";
+widget1.value += "margin: none;\n";
+widget1.value += "position: static;\n";
+widget1.value += "width: 98%;\n";
+widget1.value += "}\n";
+widget1.value += ".status-msg-border {\n";
+widget1.value += "display:none\n";
+widget1.value += "}\n";
+widget1.value += ".status-msg-body {\n";
+widget1.value += "padding: none;\n";
+widget1.value += "position: static;\n";
+widget1.value += "text-align: inherit;\n";
+widget1.value += "width: 98%;\n";
+widget1.value += "z-index: auto;\n";
+widget1.value += "}\n";
+widget1.value += ".status-msg-wrap a {\n";
+widget1.value += "padding: none;\n";
+widget1.value += "text-decoration: inherit;\n";
+widget1.value += "}\n";
+widget1.value += ".TVB-404-box {\n";
+widget1.value += "background:#FFFFFF;\n";
+widget1.value += "width:98%;\n";
+widget1.value += "margin:10px 0px;\n";
+widget1.value += "padding:20px 10px;\n";
+widget1.value += "border:1px solid #ddd;\n";
+widget1.value += "-moz-border-radius:6px;\n";
+widget1.value += "-webkit-border-radius:6px;\n";
+widget1.value += "border-radius:6px;\n";
+widget1.value += "box-shadow: 5px 5px 5px #CCCCCC;\n";
+widget1.value += "}\n";
+widget1.value += "#tvb-searchbox{\n";
+widget1.value += "background:url(http:\/\/2.bp.blogspot.com\/-Mmv5dnwsL1U\/UVbyoXqigrI\/AAAAAAAADvY\/NcJk2PcSBjY\/s1600\/searchbox_tvb.png) no-repeat scroll center center transparent;\n";
+widget1.value += "width:307px;\n";
+widget1.value += "height:50px;\n";
+widget1.value += "disaply:block;\n";
+widget1.value += "}\n";
+widget1.value += "form#tvb-searchform{display: block;padding: 10px 12px;margin:0;}\n";
+widget1.value += "form#tvb-searchform #s{padding: 6px;margin:0;width: 235px;font-size:14px;vertical-align: top;border:none;background:transparent;}\n";
+widget1.value += "form#tvb-searchform #sbutton{margin:0;padding:0;height:30px;width:30px;vertical-align: top;border:none;background:transparent;}\n";
+widget1.value += "<\/style>\n";
+widget1.value += "<\/b:if>\n";
+}
+</script>
+<div id="tvbgadmn">
+<fieldset class="redius" style="border: 2px solid #a32b33;">
+<legend class="redius" align="center" style="border: 0px solid #a32b33; padding: 3px 10px; margin-  left: 20px;"><center>Create 404 Error Page in Blogger.</center> </legend> 
+
+</br>
+
+<style>
+
+.input-text,.text-input, .select-box{
+ margin:0 2px;
+ padding:4px 6px;
+ border: 1px solid #a32b33;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ font-family: gergia;
+ font-style: italic;
+ -webkit-box-shadow: 4px 4px 4px #FEF4F4;
+ -moz-box-shadow: 4px 4px 4px #FEF4F4;
+ box-shadow: 4px 4px 4px #FEF4F4;
+ font-size: 14px;
+ color: #666;
+ max-width:auto;
+}
+.textarea-box, .textareaBox{
+ border:1px solid #a32b33;
+ padding:6px;
+ -webkit-resize: none;
+ -moz-resize: none;
+ resize: none;
+ -webkit-box-shadow: 4px 4px 4px #dfdfdf;
+ -moz-box-shadow: 4px 4px 4px #dfdfdf;
+ box-shadow: 4px 4px 4px #dfdfdf;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ border-radius: 8px;
+}
+
+
+#tvbwrapper{
+font-size:16px;color:#a32b33;
+}
+
+
+.redius{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; }
+}
+#tvbgadform {
+  font-family: Georgia, serif;
+}
+
+#tvbgadmn fieldset {
+	border: 1px solid #004000;
+	background: #FEF4F4;
+	padding: 0 20px;
+}
+
+#tvbgadmn legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#tvbgad fieldset {
+	border: 1px solid #004000;
+	background: #FEFFBF;
+	padding: 0 20px;
+}
+#tvbgad legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+</style>
+<div id="tvbgad">
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Customize</legend>
+
+<table width='100%'>
+
+<tr>
+<td width='40%'>Your Blog URL</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='blogurl' value='http://www.tipsviablogging.com' size='25'></td>
+</tr>
+<tr>
+<td width='40%'>Contact Page URL</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='Contacturl' value='http://www.tipsviablogging.com/2012/03/contact-us.html' size='25'></td>
+</tr>
+<tr></tr><tr></tr><tr></tr>
+</table>
+</fieldset>
+<br/>
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Application / Buttons</legend> </br>
+<center>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank"><input value='Generate' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:tvbcodegen();tvbcssgen();'/></center>
+</fieldset>
+<br/>
+
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Code / Demo</legend>
+<br/>
+<FONT 
+style="BACKGROUND-COLOR: #FED0D3; -webkit-border-top-left-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-bottomright: 10px; border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;"> *** Paste Following Code In Blogger Search preferences under Custom Page Not Found Field*** </FONT>
+<br/>
+<textarea class='textarea-box' name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style='background:#ffffff;width:100%;height:125px;'>
+</textarea>
+<br/>
+<FONT 
+style="BACKGROUND-COLOR: #FED0D3; -webkit-border-top-left-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-bottomright: 10px; border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;"> *** Go to blogger dashboard > Template > Edit HTMl > Just below ]]&gt;&lt;/b:skin&gt;, paste following code *** </FONT>
+
+<textarea class='textarea-box' name="widget.csscontent" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style='background:#ffffff;width:100%;height:125px;'>
+</textarea>
+<input name="infoUrl" type="hidden" value="http://www.tipsviablogging.in/" />
+<input name="logoUrl" type="hidden" value="http://4.bp.blogspot.com/-
+wHPvydOdVqU/UDEdJCcy6fI/AAAAAAAABOQ/t36cmCCBn4k/s1600/TVB+.png" />
+</form>
+<br/><br/></div>
+<br/>
+<center><small> Copyright © 2012 All Rights Reserved by Umesh   Tarsariya @ <a 
+
+href="http://www.TipsViaBlogging.com/">Tips Via Blogging</a></small></center>
+</div></div>
+</fieldset>
+</fieldset>
+</div>
+</body>
+</html>
