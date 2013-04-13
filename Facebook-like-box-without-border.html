@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>Add Facebook Like Box in blogger Without Border.</title>
+</head>
+<body>
+<script type='text/javascript'>
+;
+function tvbcodegen(){
+document.getElementsByName("go")[0].disabled=false
+var tvbfb = document.getElementsByName("fburl")[0].value
+var widget=document.getElementsByName("widget.content")[0];
+widget.value += " <center>\n";
+widget.value += "<style type=\"text\/css\">\n";
+widget.value += " .facebookouterborder {\n";
+widget.value += "    background-color:#ffffff;\n";
+widget.value += "    width:290px;\n";
+widget.value += "    padding:0px 0 0px 0px;\n";
+widget.value += "    height:300px;\n";
+widget.value += "    border:1px solid #ffffff;\n";
+widget.value += "  }\n";
+widget.value += " .facebookinnerborder {\n";
+widget.value += "    height:265px;\n";
+widget.value += "    overflow:hidden;\n";
+widget.value += "  }\n";
+widget.value += "<\/style>\n";
+widget.value += "<div class=\"facebookouterborder\">\n";
+widget.value += " <div class=\"facebookinnerborder\">\n";
+widget.value += "  <div class=\"fb-like-box\"\n";
+widget.value += "      data-width=\"290\" data-height=\"300\"\n";
+widget.value += "      data-href=\"http:\/\/www.facebook.com\/"+ tvbfb +"\"\n";
+widget.value += "      data-border-color=\"#ffffff\" data-show-faces=\"true\"\n";
+widget.value += "      data-stream=\"false\" data-header=\"false\">\n";
+widget.value += "  <\/div>\n";
+widget.value += " <\/div>\n";
+widget.value += "<\/div>\n";
+widget.value += "           ";
+widget.value += "<div id=\"fb-root\"><\/div>\n";
+widget.value += "";
+widget.value += "<script>(function(d, s, id) {\n";
+widget.value += "  var js, fjs = d.getElementsByTagName(s)[0];\n";
+widget.value += "  if (d.getElementById(id)) return;\n";
+widget.value += "  js = d.createElement(s); js.id = id;\n";
+widget.value += "  js.src = \"\/\/connect.facebook.net\/en_US\/all.js#xfbml=1\";\n";
+widget.value += "  fjs.parentNode.insertBefore(js, fjs);\n";
+widget.value += "}(document, 'script', 'facebook-jssdk'));\n";
+widget.value += "<\/script>\n";
+widget.value += "<\/center>\n";
+
+
+}
+</script>
+
+
+<div id="tvbgadmn">
+<fieldset class="redius" style="border: 2px solid #a32b33;">
+<legend class="redius" align="center" style="border: 0px solid #a32b33; padding: 
+
+3px 10px; margin-  left: 20px;"><center>Add Facebook Like Box in blogger Without Border.</center> </legend> 
+
+</br>
+
+<style>
+
+
+
+.input-text,.text-input, .select-box{
+ margin:0 2px;
+ padding:4px 6px;
+ border: 1px solid #a32b33;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ font-family: gergia;
+ font-style: italic;
+ -webkit-box-shadow: 4px 4px 4px #FEF4F4;
+ -moz-box-shadow: 4px 4px 4px #FEF4F4;
+ box-shadow: 4px 4px 4px #FEF4F4;
+ font-size: 14px;
+ color: #666;
+ max-width:auto;
+}
+.textarea-box, .textareaBox{
+ border:1px solid #a32b33;
+ padding:6px;
+ -webkit-resize: none;
+ -moz-resize: none;
+ resize: none;
+ -webkit-box-shadow: 4px 4px 4px #dfdfdf;
+ -moz-box-shadow: 4px 4px 4px #dfdfdf;
+ box-shadow: 4px 4px 4px #dfdfdf;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ border-radius: 8px;
+}
+
+
+
+
+
+
+
+.redius{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; }
+}
+#tvbgadform {
+  font-family: Georgia, serif;
+}
+
+#tvbgadmn fieldset {
+	border: 1px solid #004000;
+	background: #FEF4F4;
+	padding: 0 20px;
+}
+
+#tvbgadmn legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#tvbgad fieldset {
+	border: 1px solid #004000;
+	background: #FEFFBF;
+	padding: 0 20px;
+}
+#tvbgad legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+</style>
+<div id="tvbgad">
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 20px;">Customize</legend> 
+<table width='100%'>
+<tr>
+<td width='40%'>FaceBook Page ID</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='fburl' value='tipsviablogging' size='20'></td>
+</tr>
+<tr></tr><tr></tr><tr></tr>
+</table>
+
+</fieldset>
+<br/>
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Application / Buttons</legend> </br>
+<center>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank"><input value='Generate' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:tvbcodegen();'/>
+
+<input style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' disabled="disabled" name="go" value="Add to Blogger" type="submit">
+
+
+</fieldset>
+<br/>
+
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Code / Demo</legend>
+<br/>
+<textarea class='textarea-box' name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style=' background:#ffffff;width:100%;height:125px;'>
+</textarea>
+<input name="infoUrl" type="hidden" value="http://www.tipsviablogging.in/" />
+<input name="logoUrl" type="hidden" value="http://4.bp.blogspot.com/-wHPvydOdVqU/UDEdJCcy6fI/AAAAAAAABOQ/t36cmCCBn4k/s1600/TVB+.png" />
+</form>
+<br/><br/></div>
+<br/>
+<center><small> Copyright © 2012 All Rights Reserved by Umesh   Tarsariya @ <a href="http://www.TipsViaBlogging.com/">Tips Via Blogging</a></small></center>
+</div></div>
+</fieldset>
+</fieldset>
+
+</body>
+</html>
