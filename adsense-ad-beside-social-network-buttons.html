@@ -1,0 +1,379 @@
+<html>
+<head>
+<title>Adsense Ad Beside Social Network Buttons</title>
+</head>
+<body>
+<script type='text/javascript'>
+;
+function tvbcodegen(){
+var tvbad = document.getElementsByName("ad")[0].value
+var tvbfb = document.getElementsByName("fburl")[0].value
+var tvbtwitter = document.getElementsByName("twitterurl")[0].value
+var tvbgplus = document.getElementsByName("gplusurl")[0].value
+var tvbyoutube = document.getElementsByName("youtubeurl")[0].value
+var tvbrss = document.getElementsByName("rssurl")[0].value
+var widget=document.getElementsByName("widget.content")[0];
+widget.value = "<b:if cond='data:blog.pageType == &quot;item&quot;'>";
+widget.value += "<div style='margin: 5px 0px 20px; padding: 10px; float: none; width: 590px;'>";
+widget.value += "<div style='margin: 0px; padding: 0px; float: left; width: 267px; border-right: 0px solid rgb(221, 221, 221);'>";
+widget.value += ""+ tvbad +"";
+widget.value += "<\/div>";
+widget.value += "<div style='margin: 0px 0px 0px 0px; padding: 0px; float: right; width: 290px;'>";
+widget.value += "";
+widget.value += "<ul id=\"tvb-sexy-social\">";
+widget.value += "<li data-alt=\"Join us on Facebook\">";
+widget.value += "<a class=\"icon facebook\" href=\"http:\/\/www.facebook.com\/"+ tvbfb +"\/\">Join us on Facebook<\/a><\/li>";
+widget.value += "<li data-alt=\"Follow us on Twitter\">";
+widget.value += "<a class=\"icon twitter\" href=\"https:\/\/twitter.com\/"+ tvbtwitter +"\/\">Follow us on Twitter<\/a><\/li>";
+widget.value += "<li data-alt=\"Circle us on Google+\">";
+widget.value += "<a class=\"icon googleplus\" href=\"https:\/\/plus.google.com\/"+ tvbgplus +"\/\">Circle us on Google+<\/a><\/li>";
+widget.value += "<li data-alt=\"Follow us on youtube\">";
+widget.value += "<a class=\"icon youtube\" href=\"http:\/\/www.youtube.com\/"+ tvbyoutube +"\/\">Follow us on youtube<\/a><\/li>";
+widget.value += "<li data-alt=\"Subscribe RSS feed \">";
+widget.value += "<a class=\"icon rss\" href=\"http:\/\/feeds.feedburner.com\/"+ tvbrss +"\/\">Subscribe RSS feed <\/a><\/li><\/ul>";
+widget.value += "<\/div>";
+widget.value += "<\/div>";
+widget.value += "<div style=\"clear:both\"><\/div>";
+widget.value += "<\/b:if>";
+widget.value += "";
+}
+</script>
+
+<script type='text/javascript'>
+;
+
+function tvbcssgen(){
+
+widget1=document.getElementsByName("widget.csscontent")[0];
+widget1.value = "#tvb-sexy-social{";
+widget1.value += "list-style:none;";
+widget1.value += "text-decoration:none;";
+widget1.value += "font-size:0.9em;";
+widget1.value += "font-family:trebuchet ms,sans-serif;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social a{";
+widget1.value += "text-decoration:none;";
+widget1.value += "font-family:trebuchet ms,sans-serif;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social li{";
+widget1.value += "position:relative;";
+widget1.value += "height:38px;";
+widget1.value += "cursor:pointer;";
+widget1.value += "padding: 0 ! important;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social .facebook, .googleplus, .youtube, .rss, .twitter{";
+widget1.value += "position:relative;";
+widget1.value += "z-index:5;";
+widget1.value += "display:block;";
+widget1.value += "float:none;";
+widget1.value += "margin:10px 0 0;";
+widget1.value += "width:210px;";
+widget1.value += "height:38px;";
+widget1.value += "border-radius:5px;";
+widget1.value += "background:url(http:\/\/1.bp.blogspot.com\/-lCvbHuzv9-Q\/UMc0pT0CPoI\/AAAAAAAACrI\/ZE_SWN7qVBM\/s1600\/tvb-sexy-social.png) no-repeat;";
+widget1.value += "background-color:rgba(217,30,118,.42);";
+widget1.value += "-webkit-box-shadow:rgba(0,0,0,.28)";
+widget1.value += "0 2px 3px; -moz-box-shadow:rgba(0,0,0,.28)";
+widget1.value += "0 2px 3px; box-shadow:rgba(0,0,0,.28)";
+widget1.value += "0 2px 3px; color:#141414;";
+widget1.value += "text-align:left;";
+widget1.value += "text-indent:50px;";
+widget1.value += "text-shadow:#333 0 1px 0;";
+widget1.value += "white-space:nowrap;";
+widget1.value += "line-height:32px;";
+widget1.value += "-webkit-transition:width .25s ease-in-out,background-color .25s ease-in-out;";
+widget1.value += "-moz-transition:width .25s ease-in-out,background-color .25s ease-in-out;";
+widget1.value += "-ms-transition:width .25s ease-in-out,background-color .25s ease-in-out;";
+widget1.value += "-o-transition:width .25s ease-in-out,background-color .25s ease-in-out; transition:width .25s ease-in-out,background-color .25s ease-in-out;";
+widget1.value += "-o-box-shadow:rgba(0,0,0,.28) 0 2px 3px;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social li:after{";
+widget1.value += "position:absolute;";
+widget1.value += "top:0;";
+widget1.value += "left:50px;";
+widget1.value += "z-index:2;";
+widget1.value += "display:block;";
+widget1.value += "height:38px;";
+widget1.value += "color:#141414;";
+widget1.value += "content:attr(data-alt);";
+widget1.value += "line-height:32px;}";
+widget1.value += "#tvb-sexy-social .icon{";
+widget1.value += "overflow:hidden;";
+widget1.value += "color:#fafafa;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social .facebook{";
+widget1.value += "width:32px;";
+widget1.value += "height:32px;";
+widget1.value += "background-color:rgba(59,89,152,0.42);";
+widget1.value += "background-position:0 0;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social .twitter{";
+widget1.value += "width:32px;";
+widget1.value += "height:32px;";
+widget1.value += "background-color:rgba(64,153,255,0.42);";
+widget1.value += "background-position:0 -33px;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social .googleplus{";
+widget1.value += "width:32px;";
+widget1.value += "height:32px;";
+widget1.value += "background-color:rgba(228,69,36,0.42);";
+widget1.value += "background-position:-3px -66px;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social .youtube{";
+widget1.value += "width:32px;";
+widget1.value += "height:32px;";
+widget1.value += "background-color:rgba(174,45,39,0.42);";
+widget1.value += "background-position:0 -95px;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social .rss{";
+widget1.value += "width:32px;";
+widget1.value += "height:32px;";
+widget1.value += "background-color:rgba(255,102,0,0.42);";
+widget1.value += "background-position:-3px -126px;";
+widget1.value += "}";
+widget1.value += "#tvb-sexy-social li:hover .icon, .touch #tvb-sexy-social li .icon{";
+widget1.value += "width:210px;";
+widget1.value += "}";
+widget1.value += ".touch #tvb-sexy-social li .facebook, #tvb-sexy-social li:hover .facebook{";
+widget1.value += "background-color:rgba(59,89,152,1);";
+widget1.value += "}";
+widget1.value += ".touch #tvb-sexy-social li .twitter, #tvb-sexy-social li:hover .twitter{";
+widget1.value += "background-color:rgba(64,153,255,1);";
+widget1.value += "}";
+widget1.value += ".touch #tvb-sexy-social li .googleplus, #tvb-sexy-social li:hover .googleplus{";
+widget1.value += "background-color:rgba(228,69,36,1);";
+widget1.value += "}";
+widget1.value += ".touch #tvb-sexy-social li .youtube, #tvb-sexy-social li:hover .youtube{";
+widget1.value += "background-color:rgba(174,45,39,1);";
+widget1.value += "}";
+widget1.value += ".touch #tvb-sexy-social li .rss, #tvb-sexy-social li:hover .rss{";
+widget1.value += "background-color:rgba(255,102,0,1);";
+widget1.value += "}";
+
+
+
+}
+</script>
+
+<style>
+
+.input-text,.text-input, .select-box{
+ margin:0 2px;
+ padding:4px 6px;
+ border: 1px solid #a32b33;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ font-family: gergia;
+ font-style: italic;
+ -webkit-box-shadow: 4px 4px 4px #FEF4F4;
+ -moz-box-shadow: 4px 4px 4px #FEF4F4;
+ box-shadow: 4px 4px 4px #FEF4F4;
+ font-size: 14px;
+ color: #666;
+ max-width:auto;
+}
+.textarea-box, .textareaBox{
+ border:1px solid #a32b33;
+ padding:6px;
+ -webkit-resize: none;
+ -moz-resize: none;
+ resize: none;
+ -webkit-box-shadow: 4px 4px 4px #dfdfdf;
+ -moz-box-shadow: 4px 4px 4px #dfdfdf;
+ box-shadow: 4px 4px 4px #dfdfdf;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ border-radius: 8px;
+}
+
+
+#tvbwrapper{
+font-size:16px;color:#a32b33;
+}
+
+
+.redius{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; }
+}
+#tvbgadform {
+  font-family: Georgia, serif;
+}
+
+#tvbgadmn fieldset {
+	border: 1px solid #004000;
+	background: #FEF4F4;
+	padding: 0 20px;
+}
+
+#tvbgadmn legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#tvbgad fieldset {
+	border: 1px solid #004000;
+	background: #FEFFBF;
+	padding: 0 20px;
+}
+#tvbgad legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+</style>
+
+<div id="tvbgadmn">
+<fieldset class="redius" style="border: 2px solid #a32b33;">
+<legend class="redius" align="center" style="border: 0px solid #a32b33; padding: 3px 10px; margin-  left: 20px;"><center>Adsense Ad Beside Social Network Buttons</center> </legend> 
+
+</br>
+
+<style>
+.redius{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; }
+}
+#tvbgadform {
+	font-family: Georgia, serif;
+}
+
+#tvbgadmn fieldset {
+	border: 1px solid #004000;
+	background: #FEF4F4;
+	padding: 0 20px;
+}
+
+#tvbgadmn legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#tvbgad fieldset {
+	border: 1px solid #004000;
+	background: #FEFFBF;
+	padding: 0 20px;
+}
+#tvbgad legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+</style><div id="tvbgad">
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Customize</legend>
+
+<table width='100%'>
+<br/>
+<tr>
+<center>
+***Pasted Parser Adsense Code Here***<br/>
+<a href="http://www.tipsviablogging.in/2012/07/HTML-Parser-Converter-Tools.html" target="_blank"><span style="font-size: x-small;">How to Parser Adsense Code?</span></a>
+<br/><textarea class='textarea-box' name='ad'  style='background:#ffffff;width:100%;height:125px;'></textarea>
+<center>
+</tr>
+<br/>
+<tr>
+<td width='40%'>FaceBook Page ID</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='fburl' value='tipsviablogging' size='25'></td>
+</tr>
+
+<tr>
+<td width='40%'>Twitter Username</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='twitterurl' value='UmeshTarsariya' size='25'></td>
+</tr>
+
+<tr>
+<td width='40%'>Google + ID</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='gplusurl' value='108949096200367463694' size='25'></td>
+</tr>
+
+<tr>
+<td width='40%'>Youtube Channel Name</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='youtubeurl' value='tipsviablogging' size='25'></td>
+</tr>
+
+<tr>
+<td width='40%'>Rss Feedburner User ID</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='rssurl' value='UmeshTarsariya' size='25'></td>
+</tr>
+
+
+<tr></tr><tr></tr><tr></tr>
+</table>
+</fieldset>
+<br/>
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Application / Buttons</legend> </br>
+<center>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank"><input value='Generate' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:tvbcodegen();tvbcssgen();'/></center>
+</fieldset>
+<br/>
+
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Code / Demo</legend>
+<br/>
+<FONT 
+style="BACKGROUND-COLOR: #FED0D3; -webkit-border-top-left-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-bottomright: 10px; border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;"> ***HTML*** </FONT>
+<br/>
+<textarea class='textarea-box' name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style='background:#ffffff;width:100%;height:125px;'>
+</textarea>
+<br/>
+<FONT 
+style="BACKGROUND-COLOR: #FED0D3; -webkit-border-top-left-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-bottomright: 10px; border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;"> ***CSS*** </FONT>
+
+<textarea class='textarea-box' name="widget.csscontent" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style='background:#ffffff;width:100%;height:125px;'>
+</textarea>
+<input name="infoUrl" type="hidden" value="http://www.tipsviablogging.in/" />
+<input name="logoUrl" type="hidden" value="http://4.bp.blogspot.com/-
+wHPvydOdVqU/UDEdJCcy6fI/AAAAAAAABOQ/t36cmCCBn4k/s1600/TVB+.png" />
+</form>
+<br/><br/></div>
+<br/>
+<center><small> Copyright © 2012 All Rights Reserved by Umesh   Tarsariya @ <a 
+
+href="http://www.TipsViaBlogging.com/">Tips Via Blogging</a></small></center>
+</div></div>
+</fieldset>
+</fieldset>
+</div>
+</body>
+</html>
