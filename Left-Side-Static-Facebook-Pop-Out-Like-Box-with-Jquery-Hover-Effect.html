@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>Add Left Side Static Facebook Pop Out Like Box with Jquery Hover Effect</title>
+</head>
+<body>
+<script type='text/javascript'>
+;
+function tvbcodegen(){
+
+var weburl = document.getElementsByName("weburl")[0].value
+var widget=document.getElementsByName("widget.content")[0];
+widget.value = "<style type=\"text\/css\">";
+widget.value += "\/*<![CDATA[*\/";
+widget.value += "#Facebookplikebox{display: block;padding: 0;z-index: 99999;position: fixed;}.Facebookplbadge {background-color:#3B5998;display: block;height: 150px;top: 50%;margin-top: -75px;position: absolute;left: -47px;width: 47px;background-image: url(\"http:\/\/2.bp.blogspot.com\/-JXd9I8GZTu4\/UQerfkiPEzI\/AAAAAAAADNM\/pfuaNctMw_I\/s1600\/facebook.png \");background-repeat: no-repeat;overflow: hidden;-webkit-border-top-left-radius: 8px;-webkit-border-bottom-left-radius: 8px;-moz-border-radius-topleft: 8px;-moz-border-radius-bottomleft: 8px;border-top-left-radius: 8px;border-bottom-left-radius: 8px;}.TVBFacebookplikebox span{bottom: 12px;font: 8px \"lucida grande\",tahoma,verdana,arial,sans-serif;position: absolute;right: 6px;text-align: right;z-index: 99999;}.TVBFacebookplikebox span a{color: #808080;text-decoration:none;}.TVBFacebookplikebox span a:hover{text-decoration:underline;}";
+widget.value += "\/*]]>*\/";
+widget.value += "<\/style>";
+widget.value += "<script type=\"text\/javascript\">";
+widget.value += "\/*<![CDATA[*\/";
+widget.value += "(function(TVB){\n";
+widget.value += "TVB(document).ready(function(){\n";
+widget.value += "var $dur = \"medium\"; \/\/ Duration of Animation\n";
+widget.value += "TVB(\"#Facebookplikebox\").css({right: -250, \"top\" : 100 })\n";
+widget.value += "TVB(\"#Facebookplikebox\").hover(function () {\n";
+widget.value += "TVB(this).stop().animate({\n";
+widget.value += "right: 0\n";
+widget.value += "}, $dur);\n";
+widget.value += "}, function () {\n";
+widget.value += "TVB(this).stop().animate({\n";
+widget.value += "right: -250\n";
+widget.value += "}, $dur);\n";
+widget.value += "});\n";
+widget.value += "TVB(\"#Facebookplikebox\").show();\n";
+widget.value += "});\n";
+widget.value += "})(jQuery);";
+widget.value += "\/*]]>*\/";
+widget.value += "<\/script>";
+widget.value += "<div class=\"TVBFacebookplikebox\">";
+widget.value += "<div id=\"Facebookplikebox\" style=\"display:none;\">";
+widget.value += "<div class=\"Facebookplbadge\"><\/div>";
+widget.value += " <iframe src=\"http:\/\/www.facebook.com\/plugins\/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2F"+ weburl +"&amp;width=250&amp;height=270&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23C4C4C4&amp;stream=false&amp;header=false\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:250px; height:270px;background:#ffffff;\" allowtransparency=\"true\">";
+widget.value += "<\/iframe>";
+widget.value += "<span>";
+widget.value += "<a href=\"http:\/\/www.tipsviablogging.com\/\">Add This In Your Blog<\/a> ";
+widget.value += "<\/span>";
+widget.value += "<\/div>";
+widget.value += "<\/div>";
+widget.value += "";
+}
+</script>
+
+
+<div id="tvbgadmn">
+<fieldset class="redius" style="border: 2px solid #a32b33;">
+<legend class="redius" align="center" style="border: 0px solid #a32b33; padding: 
+
+3px 10px; margin-  left: 20px;"><center>Add Left Side Static Facebook Pop Out Like Box with Jquery Hover Effect</center> </legend> 
+
+</br>
+
+<style>
+
+
+
+.input-text,.text-input, .select-box{
+ margin:0 2px;
+ padding:4px 6px;
+ border: 1px solid #a32b33;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ font-family: gergia;
+ font-style: italic;
+ -webkit-box-shadow: 4px 4px 4px #FEF4F4;
+ -moz-box-shadow: 4px 4px 4px #FEF4F4;
+ box-shadow: 4px 4px 4px #FEF4F4;
+ font-size: 14px;
+ color: #666;
+ max-width:auto;
+}
+.textarea-box, .textareaBox{
+ border:1px solid #a32b33;
+ padding:6px;
+ -webkit-resize: none;
+ -moz-resize: none;
+ resize: none;
+ -webkit-box-shadow: 4px 4px 4px #dfdfdf;
+ -moz-box-shadow: 4px 4px 4px #dfdfdf;
+ box-shadow: 4px 4px 4px #dfdfdf;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ border-radius: 8px;
+}
+
+
+
+
+
+
+
+.redius{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; }
+}
+#tvbgadform {
+  font-family: Georgia, serif;
+}
+
+#tvbgadmn fieldset {
+	border: 1px solid #004000;
+	background: #FEF4F4;
+	padding: 0 20px;
+}
+
+#tvbgadmn legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#tvbgad fieldset {
+	border: 1px solid #004000;
+	background: #FEFFBF;
+	padding: 0 20px;
+}
+#tvbgad legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+</style>
+<div id="tvbgad">
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 20px;">Customize</legend> 
+<table width='100%'>
+<tr>
+<td width='40%'>Facebook Page Name</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='weburl' value='tipsviablogging' size='21'></td>
+</tr>
+<tr></tr><tr></tr><tr></tr>
+</table>
+
+</fieldset>
+<br/>
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Application / Buttons</legend> </br>
+<center>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank"><input value='Generate' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:tvbcodegen();'/><input name="go" value='Add to Blogger' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='submit' onclick='javascript:tvbcodegen();'/></center>
+
+</fieldset>
+<br/>
+
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Code / Demo</legend>
+<br/>
+<textarea class='textarea-box' name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style=' background:#ffffff;width:100%;height:75px;'>
+</textarea>
+<input name="infoUrl" type="hidden" value="http://www.tipsviablogging.in/" />
+<input name="logoUrl" type="hidden" value="http://4.bp.blogspot.com/-wHPvydOdVqU/UDEdJCcy6fI/AAAAAAAABOQ/t36cmCCBn4k/s1600/TVB+.png" />
+</form>
+<br/><br/></div>
+<br/>
+<center><small> Copyright © 2012 All Rights Reserved by Umesh   Tarsariya @ <a href="http://www.TipsViaBlogging.com/">Tips Via Blogging</a></small></center>
+</div></div>
+</fieldset>
+</fieldset>
+</body>
+</html>
