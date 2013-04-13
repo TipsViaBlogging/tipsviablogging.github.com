@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Title and Meta Tag Counter For Website</title>
+</head>
+<body>
+
+<script type="text/javascript"><!--
+
+
+
+function titlecounter( field, countfield, maxlimit ) {
+
+if ( field.value.length > maxlimit ) {
+
+ // field.value = field.value.substring(0); (This limits the text length and creates issues in IE)
+
+  setbg('#FF9E9E');
+
+  countfield.value = maxlimit - field.value.length;
+
+
+  return false;
+
+} else {
+
+  countfield.value = maxlimit - field.value.length;
+
+  setbg('#ffffff');
+
+  }
+
+}
+
+function metadescription( field, countfield, maxlimit ) {
+
+if ( field.value.length > maxlimit ) {
+
+ // field.value = field.value.substring(0); (This limits the text length and creates issues in IE)
+
+  bgtwo('#FF9E9E');
+
+  countfield.value = maxlimit - field.value.length;
+ 
+  	
+
+  return false;
+  
+
+} else {
+
+  countfield.value = maxlimit - field.value.length;
+
+  bgtwo('#ffffff');
+
+}
+
+}
+
+function setbg(color)
+
+            {
+
+            document.getElementById("styled").style.background=color
+
+            return false;
+
+            }
+
+function bgtwo(color)
+
+            {
+
+            document.getElementById("styled2").style.background=color
+
+            return false;
+
+            }
+
+//-->
+
+</script>
+
+<form>
+<h2>Title Characters Counter for Website</h2>
+ 
+    <input disabled="disabled" maxlength="3" name="counter" onblur="titlecounter(this.form.recipients,this,67);"  size="3" tabindex="4" value="67" />  Characters Remaining
+ <br/>
+    <textarea name="message" cols="60" rows="3"  class="capitalize" id="styled"  onfocus="titlecounter(this,this.form.counter,67);" onkeydown="titlecounter(this,this.form.counter,67);" onkeyup="titlecounter(this,this.form.counter,67);"></textarea>
+
+</form>
+
+<form>
+  
+<h2>Meta Description Characters Counter for Website</h2>
+
+    <input disabled="disabled" maxlength="3" name="counter" onblur="textCounter2(this.form.recipients,this,147);"  size="3" tabindex="5" value="147" /> Characters Remaining 
+
+ <br/>   
+<textarea name="message" cols="60" rows="3" class="text-left" id ="styled2"  onfocus="metadescription(this,this.form.counter,147);" onkeydown="metadescription(this,this.form.counter,147);" onkeyup="metadescription(this,this.form.counter,147);"></textarea>
+    
+</form>
+<center><small> CopyRight @ <a href="http://www.tipsviablogging.com/" >Tips Via Blogging</a>
+</small></center>
+</body>
+</html>
