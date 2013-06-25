@@ -16,6 +16,9 @@ var jsCommentPages = function(){
 					case "fb-comments":
 						$tab.prepend("<img src='http://3.bp.blogspot.com/-WZFew-hmWYs/UcbkHj-2D2I/AAAAAAAAEJw/D0mXysXQP_Q/s1600/white-Facebook-F.png'>");
 						break;
+					case "get-this":
+						$tab.prepend("<img src='http://3.bp.blogspot.com/-9dSC4V-ERMs/UclFdUjqV_I/AAAAAAAAEKQ/R0F5B-uHzwM/s1600/Get-this.png'>");
+						break;
 				}
 				$tab = null;
 			});
