@@ -1,0 +1,274 @@
+<html>
+<head>
+<title>Integrated Blogger, Disqus and Facebook Comment tab Generator</title>
+</head>
+<body>
+<script type='text/javascript'>
+;
+function tvbcodegen(){
+var disqusnameid = document.getElementsByName("disqusname")[0].value
+var fbnum = document.getElementsByName("fbnumcom")[0].value
+var fbwidth = document.getElementsByName("fbwidthcom")[0].value
+var widget=document.getElementsByName("widget.content")[0];
+widget.value = "                      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>\n";
+widget.value += "                        <div class='js-default-tab comments-tab' id='blogger-comments' title='Comments from Blogger'>\n";
+widget.value += "                          <data:post.numComments\/>\n";
+widget.value += "                          Comments\n";
+widget.value += "                        <\/div>\n";
+widget.value += "                        <div class='comments-tab disqusbutton' id='disqus-comments' onclick='load_disqus()' title='Comments with Disqus'>\n";
+widget.value += "                          <a alt='submit' class='dsq-comment-count comment-link commentslink' expr:href='data:post.url + &quot;#disqus_thread&quot;' style='text-decoration: none; color: #ffffff'\/>\n";
+widget.value += "                          Disqus\n";
+widget.value += "                        <\/div>\n";
+widget.value += "                        <div class='comments-tab' id='fb-comments' title='Comments made on Facebook'>\n";
+widget.value += "                          <fb:comments-count expr:href='data:post.url'\/>\n";
+widget.value += "                          Fb Comments\n";
+widget.value += "                        <\/div>\n";
+widget.value += "                        <div id='get-this' style='float: Right' title='Get This Comments Plugins'>\n";
+widget.value += "                          <a href='http:\/\/www.tipsviablogging.com\/' style='text-decoration: none;' target='_blank'>\n";
+widget.value += "                            <span style='color: #999999;'>\n";
+widget.value += "                              [Get It]\n";
+widget.value += "                            <\/span>\n";
+widget.value += "                          <\/a>\n";
+widget.value += "                        <\/div>\n";
+widget.value += "                      <\/b:if>\n";
+widget.value += "                      <div class='clear'\/>\n";
+widget.value += "                    <\/div>\n";
+widget.value += "                    <div class='comments-page' id='disqus-comments-page'>\n";
+widget.value += "                      <div id='disqus_thread'\/>\n";
+widget.value += "                      <b:if cond='data:blog.pageType == &quot;item&quot;'>\n";
+widget.value += "                        <div id='disqus_thread'\/>\n";
+widget.value += "                        <div id='disqus_loader' style='text-align: center'>\n";
+widget.value += "                          <script>\n";
+widget.value += "                            function load_disqus()     {       var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text\/javascript&#39;; dsq.async = true;       dsq.src = &quot;http:\/\/"+ disqusnameid +".disqus.com\/embed.js&quot;;       (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);       var ldr = document.getElementById(&#39;disqus_loader&#39;);       ldr.parentNode.removeChild(ldr);     }   <\/script>\n";
+widget.value += "                        <\/div>\n";
+widget.value += "                      <\/b:if>\n";
+widget.value += "                    <\/div>\n";
+widget.value += "                    <div class='comments-page' id='fb-comments-page'>\n";
+widget.value += "                      <b:if cond='data:blog.pageType == &quot;item&quot;'>\n";
+widget.value += "                        <fb:comments-count expr:href='data:post.url'\/>\n";
+widget.value += "                        <b>\n";
+widget.value += "                          Comments :\n";
+widget.value += "                        <\/b>\n";
+widget.value += "                        <br\/>\n";
+widget.value += "                        <br\/>\n";
+widget.value += "                        <fb:comments expr:href='data:post.url' num_posts='"+ fbnum +"' width='"+ fbwidth +"'\/>\n";
+widget.value += "                      <\/b:if>\n";
+widget.value += "                    <\/div>\n";
+widget.value += "                    <div class='comments comments-page' id='blogger-comments-page'>";
+}
+
+
+</script>
+<style>
+
+.input-text,.text-input, .select-box{
+ margin:0 2px;
+ padding:4px 6px;
+ border: 1px solid #a32b33;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ font-family: gergia;
+ font-style: italic;
+ -webkit-box-shadow: 4px 4px 4px #FEF4F4;
+ -moz-box-shadow: 4px 4px 4px #FEF4F4;
+ box-shadow: 4px 4px 4px #FEF4F4;
+ font-size: 14px;
+ color: #666;
+ max-width:auto;
+}
+.textarea-box, .textareaBox{
+ border:1px solid #a32b33;
+ padding:6px;
+ -webkit-resize: none;
+ -moz-resize: none;
+ resize: none;
+ -webkit-box-shadow: 4px 4px 4px #dfdfdf;
+ -moz-box-shadow: 4px 4px 4px #dfdfdf;
+ box-shadow: 4px 4px 4px #dfdfdf;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ border-radius: 8px;
+}
+
+
+#tvbwrapper{
+font-size:16px;color:#a32b33;
+}
+
+
+.redius{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; }
+}
+#tvbgadform {
+  font-family: Georgia, serif;
+}
+
+#tvbgadmn fieldset {
+  border: 1px solid #004000;
+  background: #FEF4F4;
+	padding: 0 20px;
+}
+
+#tvbgadmn legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#tvbgad fieldset {
+	border: 1px solid #004000;
+	background: #FEFFBF;
+	padding: 0 20px;
+}
+#tvbgad legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+</style>
+
+<div id="tvbgadmn">
+<fieldset class="redius" style="border: 2px solid #a32b33;">
+<legend class="redius" align="center" style="border: 0px solid #a32b33; padding: 3px 10px; margin-  left: 20px;"><center>Integrated Blogger, Disqus and Facebook Comment tab Generator</center> </legend> 
+
+</br>
+
+<style>
+.redius{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; }
+}
+#tvbgadform {
+	font-family: Georgia, serif;
+}
+
+#tvbgadmn fieldset {
+	border: 1px solid #004000;
+	background: #FEF4F4;
+	padding: 0 20px;
+}
+
+#tvbgadmn legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#tvbgad fieldset {
+	border: 1px solid #004000;
+	background: #FEFFBF;
+	padding: 0 20px;
+}
+#tvbgad legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+</style><div id="tvbgad">
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Customize</legend>
+
+<table width='100%'>
+<br/>
+
+<tr>
+<td width='40%'>Disqus Site Username:</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='disqusname' value='Disqus Site Username' size='25'></td>
+</tr>
+<tr>
+<td width='40%'>No. of Facebook  Comment:</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='fbnumcom' value='10' size='5'></td>
+</tr>
+<tr>
+<td width='40%'>Facebook Comment Box Width:</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='fbwidthcom' value='500' size='5'>px;</td>
+</tr>
+<tr></tr><tr></tr><tr></tr>
+</table>
+</fieldset>
+<br/>
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Application / Buttons</legend> </br>
+<center>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank"><input value='Generate' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:tvbcodegen();'/></center>
+</fieldset>
+<br/>
+
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Code / Demo</legend>
+<br/>
+<br/>
+<textarea class='textarea-box' name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style='background:#ffffff;width:100%;height:125px;'>
+</textarea>
+<br/>
+
+
+<input name="infoUrl" type="hidden" value="http://www.tipsviablogging.in/" />
+<input name="logoUrl" type="hidden" value="http://4.bp.blogspot.com/-
+wHPvydOdVqU/UDEdJCcy6fI/AAAAAAAABOQ/t36cmCCBn4k/s1600/TVB+.png" />
+</form>
+<br/><br/></div>
+<br/>
+<center><small> Copyright Â© 2012 All Rights Reserved by Umesh   Tarsariya @ <a 
+
+href="http://www.TipsViaBlogging.com/">Tips Via Blogging</a></small></center>
+</div></div>
+</fieldset>
+</fieldset>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
