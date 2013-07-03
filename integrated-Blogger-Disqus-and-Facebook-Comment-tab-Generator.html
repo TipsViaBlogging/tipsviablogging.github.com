@@ -10,20 +10,20 @@ var disqusnameid = document.getElementsByName("disqusname")[0].value
 var fbnum = document.getElementsByName("fbnumcom")[0].value
 var fbwidth = document.getElementsByName("fbwidthcom")[0].value
 var widget=document.getElementsByName("widget.content")[0];
-widget.value = "                      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>\n";
-widget.value += "                        <div class='js-default-tab comments-tab' id='blogger-comments' title='Comments from Blogger'>\n";
-widget.value += "                          <data:post.numComments\/>\n";
-widget.value += "                          Comments\n";
-widget.value += "                        <\/div>\n";
-widget.value += "                        <div class='comments-tab disqusbutton' id='disqus-comments' onclick='load_disqus()' title='Comments with Disqus'>\n";
-widget.value += "                          <a alt='submit' class='dsq-comment-count comment-link commentslink' expr:href='data:post.url + &quot;#disqus_thread&quot;' style='text-decoration: none; color: #ffffff'\/>\n";
-widget.value += "                          Disqus\n";
-widget.value += "                        <\/div>\n";
-widget.value += "                        <div class='comments-tab' id='fb-comments' title='Comments made on Facebook'>\n";
-widget.value += "                          <fb:comments-count expr:href='data:post.url'\/>\n";
-widget.value += "                          Fb Comments\n";
-widget.value += "                        <\/div>\n";
-widget.value += "                        <div id='get-this' style='float: Right' title='Get This Comments Plugins'>\n";
+widget.value = "  <b:if cond='data:blog.pageType != &quot;static_page&quot;'>\n";
+widget.value += "    <div class='js-default-tab comments-tab' id='blogger-comments' title='Comments from Blogger'>\n";
+widget.value += "        <data:post.numComments\/>\n";
+widget.value += "            Comments\n";
+widget.value += "            <\/div>\n";
+widget.value += "            <div class='comments-tab disqusbutton' id='disqus-comments' onclick='load_disqus()' title='Comments with Disqus'>\n";
+widget.value += "            <a alt='submit' class='dsq-comment-count comment-link commentslink' expr:href='data:post.url + &quot;#disqus_thread&quot;' style='text-decoration: none; color: #ffffff'\/>\n";
+widget.value += "            Disqus\n";
+widget.value += "            <\/div>\n";
+widget.value += "            <div class='comments-tab' id='fb-comments' title='Comments made on Facebook'>\n";
+widget.value += "            <fb:comments-count expr:href='data:post.url'\/>\n";
+widget.value += "            Fb Comments\n";
+widget.value += "            <\/div>\n";
+widget.value += "            <div id='get-this' style='float: Right' title='Get This Comments Plugins'>\n";
 widget.value += "                          <a href='http:\/\/www.tipsviablogging.com\/' style='text-decoration: none;' target='_blank'>\n";
 widget.value += "                            <span style='color: #999999;'>\n";
 widget.value += "                              [Get It]\n";
@@ -42,19 +42,19 @@ widget.value += "                          <script>\n";
 widget.value += "                            function load_disqus()     {       var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text\/javascript&#39;; dsq.async = true;       dsq.src = &quot;http:\/\/"+ disqusnameid +".disqus.com\/embed.js&quot;;       (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);       var ldr = document.getElementById(&#39;disqus_loader&#39;);       ldr.parentNode.removeChild(ldr);     }   <\/script>\n";
 widget.value += "                        <\/div>\n";
 widget.value += "                      <\/b:if>\n";
-widget.value += "                    <\/div>\n";
-widget.value += "                    <div class='comments-page' id='fb-comments-page'>\n";
-widget.value += "                      <b:if cond='data:blog.pageType == &quot;item&quot;'>\n";
-widget.value += "                        <fb:comments-count expr:href='data:post.url'\/>\n";
-widget.value += "                        <b>\n";
-widget.value += "                          Comments :\n";
-widget.value += "                        <\/b>\n";
-widget.value += "                        <br\/>\n";
-widget.value += "                        <br\/>\n";
-widget.value += "                        <fb:comments expr:href='data:post.url' num_posts='"+ fbnum +"' width='"+ fbwidth +"'\/>\n";
-widget.value += "                      <\/b:if>\n";
-widget.value += "                    <\/div>\n";
-widget.value += "                    <div class='comments comments-page' id='blogger-comments-page'>";
+widget.value += "                <\/div>\n";
+widget.value += "                <div class='comments-page' id='fb-comments-page'>\n";
+widget.value += "                <b:if cond='data:blog.pageType == &quot;item&quot;'>\n";
+widget.value += "                <fb:comments-count expr:href='data:post.url'\/>\n";
+widget.value += "                <b>\n";
+widget.value += "                Comments :\n";
+widget.value += "                <\/b>\n";
+widget.value += "                <br\/>\n";
+widget.value += "                <br\/>\n";
+widget.value += "                <fb:comments expr:href='data:post.url' num_posts='"+ fbnum +"' width='"+ fbwidth +"'\/>\n";
+widget.value += "                <\/b:if>\n";
+widget.value += "           <\/div>\n";
+widget.value += "     <div class='comments comments-page' id='blogger-comments-page'>";
 }
 
 
