@@ -62,6 +62,6 @@ var jsCommentPages = function(){
 		  	$activePage = $("#" + $activeTab.attr("id") + "-page");
 		  	$activePage.show();
 		};
-	$("head").append("<link id='js-comments-pages-styles' rel='stylesheet' type='text/css' href='http://tipsviablogging.github.io/tvbcommentstyle.css'/>");
+	$("head").append("<link id='js-comments-pages-styles' rel='stylesheet' type='text/css' href='http://tipsviablogging.github.io/integrated-gplus-blogger.css'/>");
   	$("document").ready(init);
 }();
