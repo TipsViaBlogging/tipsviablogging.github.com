@@ -19,6 +19,10 @@ var jsCommentPages = function(){
 					case "get-this":
 						$tab.prepend("<img src='http://3.bp.blogspot.com/-9dSC4V-ERMs/UclFdUjqV_I/AAAAAAAAEKQ/R0F5B-uHzwM/s1600/Get-this.png'>");
 						break;
+					case "gplus-comments":
+						$tab.prepend("<img src='http://2.bp.blogspot.com/-oAGoAXHbA1s/UdVqbMTj5yI/AAAAAAAAENU/b0lZ9QaO0fc/s210/white-Google-Plus.png'>");
+						break;
+						
 				}
 				$tab = null;
 			});
