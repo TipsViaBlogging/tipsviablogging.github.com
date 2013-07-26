@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Disqus Combined Widget Generator.</title>
+</head>
+<body>
+<script type='text/javascript'>
+;
+function tvbcodegen(){
+var offerstext = document.getElementsByName("offerstext")[0].value
+var offerslink = document.getElementsByName("offerslink")[0].value
+var long = document.getElementsByName("long")[0].value
+var lat = document.getElementsByName("lat")[0].value
+var landline = document.getElementsByName("landline")[0].value
+var mobile = document.getElementsByName("mobile")[0].value
+var add1 = document.getElementsByName("add1")[0].value
+var add2 = document.getElementsByName("add2")[0].value
+var firmname = document.getElementsByName("firmname")[0].value
+var city = document.getElementsByName("city")[0].value
+var imgkey = document.getElementsByName("imgkey")[0].value
+var imgurl = document.getElementsByName("imgurl")[0].value
+var seointro = document.getElementsByName("seointro")[0].value
+var widget=document.getElementsByName("widget.content")[0];
+widget.value = "Discount offers in "+ firmname +", "+ city +"\n";
+widget.value += "<div dir=\"ltr\" style=\"text-align: left;\" trbidi=\"on\">\n";
+widget.value += "<div style=\"text-align: justify;\">\n";
+widget.value += "<img alt=\""+ imgkey +"\" border=\"0\" src=\""+ imgurl +"\" title=\""+ imgkey +"\" \/>\n";
+widget.value += ""+ seointro +"<!--more-->\n";
+widget.value += "<h3>\n";
+widget.value += "Get Coupon Code:<\/h3>\n";
+widget.value += "<ol>\n";
+widget.value += "<li>Visit This Link&nbsp; &gt;&gt; <a href=\""+ offerslink +"\" target=\"_blank\">"+ offerstext +"<\/a>&nbsp;<\/li>\n";
+widget.value += "<li>Click On Get Coupon.&nbsp;<\/li>\n";
+widget.value += "<li>Fill in your details and Submit.<\/li>\n";
+widget.value += "<li>The sms will be deliverd on your mobile along with vendor and offer details.<\/li>\n";
+widget.value += "<li>Take the coupon to the retailer and show them.<\/li>\n";
+widget.value += "<li>Avail discount. <\/li>\n";
+widget.value += "<\/ol>\n";
+widget.value += "<h3>\n";
+widget.value += "Redeem Your Coupon At "+ firmname +", "+ city +":<\/h3>\n";
+widget.value += "Address 1 : "+ add1 +"\n";
+widget.value += "Address 2 : "+ add2 +"\n";
+widget.value += "Landline No. : "+ landline +"\n";
+widget.value += "Mobile No. : "+ mobile +"\n";
+widget.value += "<h3>\n";
+widget.value += "Map Location Of "+ firmname +", "+ city +"<\/h3>\n";
+widget.value += "<iframe width=\"600\" height=\"350\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https:\/\/maps.google.co.in\/?ll="+ lat +","+ long +"&t=m&z=14&amp;t=m&amp;z=14&amp;output=embed\"><\/iframe>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/div>\n";
+}
+</script>
+
+
+<div id="tvbgadmn">
+<fieldset class="redius" style="border: 2px solid #a32b33;">
+<legend class="redius" align="center" style="border: 0px solid #a32b33; padding: 
+
+3px 10px; margin-  left: 20px;"><center>Disqus Combined Widget Generator.</center> </legend> 
+
+</br>
+
+<div id="tvbgad">
+<table width='100%'>
+<tr>
+<td width='40%'>Firm Name</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='firmname' value='xyz' size='3'></td>
+</tr>
+<tr>
+<td width='40%'>City</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='city' value='surat' size='3'></td>
+</tr>
+<tr>
+<td width='40%'>Image Title & Alt tag</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='imgkey' value='Image Title & Alt tag' size='20'></td>
+</tr>
+<tr>
+<td width='40%'>Offers Image URL</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='imgurl' value='Offers Image URL' size='20'></td>
+</tr>
+<tr>
+<td width='40%'>Address 1</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='add1' value='Address 1' size='10'></td>
+</tr>
+<tr>
+<td width='40%'>Address 2</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='add2' value='Address 2' size='10'></td>
+</tr>
+<tr>
+<td width='40%'>Landline</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='landline' value='Landline' size='10'></td>
+</tr>
+<tr>
+<td width='40%'>Mobile</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='mobile' value='Mobile' size='10'></td>
+</tr>
+<tr>
+<td width='40%'>SEO Description</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='seointro' value='SEO intro' size='30'></td>
+</tr>
+<tr>
+<tr>
+<td width='40%'>Offers Link</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='offerslink' value='offerslink' size='30'></td>
+</tr>
+<tr>
+<tr>
+<td width='40%'>Offers Text</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='offerstext' value='offerstext' size='30'></td>
+</tr>
+<tr>
+<tr>
+<td width='40%'>Lat</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='lat' value='Lat' size='30'></td>
+</tr>
+<tr>
+<tr>
+<td width='40%'>Long</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='long' value='Long' size='30'></td>
+</tr>
+<tr>
+
+
+<tr></tr><tr></tr><tr></tr>
+</table>
+
+<br/>
+<center>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank"><input value='Generate' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:tvbcodegen();'/>
+
+<br/>
+<textarea class='textarea-box' name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style=' background:#ffffff;width:100%;height:125px;'>
+</textarea>
+<input name="infoUrl" type="hidden" value="http://www.tipsviablogging.in/" />
+<input name="logoUrl" type="hidden" value="http://4.bp.blogspot.com/-wHPvydOdVqU/UDEdJCcy6fI/AAAAAAAABOQ/t36cmCCBn4k/s1600/TVB+.png" />
+</form>
+<br/><br/></div>
+<br/>
+</div></div>
+</body>
+</html>
