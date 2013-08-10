@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>Rotating Social Media Widget Generator For Blogger </title>
+</head>
+<body>
+<script type='text/javascript'>
+;
+function tvbcodegen(){
+document.getElementsByName("go")[0].disabled=false
+var fburl = document.getElementsByName("fburl")[0].value
+var twitterurl = document.getElementsByName("twitterurl")[0].value
+var gplusurl = document.getElementsByName("gplusurl")[0].value
+var rssurl = document.getElementsByName("rssurl")[0].value
+var youtube = document.getElementsByName("youtube")[0].value
+var widget=document.getElementsByName("widget.content")[0];
+var widget=document.getElementsByName("widget.content")[0];
+widget.value = "<style>\n";
+widget.value += " #tvbrotate a:hover {";
+widget.value += "background-color: transparent;";
+widget.value += "opacity:0.7;";
+widget.value += "} ";
+widget.value += "#tvbrotate img {";
+widget.value += " -moz-transition: all 0.8s ease-in-out; ";
+widget.value += "-webkit-transition: all 0.8s ease-in-out; ";
+widget.value += "-o-transition: all 0.8s ease-in-out;";
+widget.value += " -ms-transition: all 0.8s ease-in-out;";
+widget.value += " transition: all 0.8s ease-in-out;";
+widget.value += " }";
+widget.value += " #tvbrotate img:hover {";
+widget.value += " -moz-transform: rotate(360deg); ";
+widget.value += "-webkit-transform: rotate(360deg); ";
+widget.value += "-o-transform: rotate(360deg);";
+widget.value += " -ms-transform: rotate(360deg); ";
+widget.value += "transform: rotate(360deg);";
+widget.value += " } ";
+widget.value += "<\/style> ";
+widget.value += "<center>";
+widget.value += "<div id=\"tvbrotate\"> <!--Start Rss Icon--> <a title=\"Grab Our Rss Feed\" href=\"http:\/\/feeds.feedburner.com\/"+ rssurl +"\" target=\"_blank\"><img border=\"0\" src=\"http:\/\/3.bp.blogspot.com\/-bikxsnQWdhE\/UgXVgdnOBkI\/AAAAAAAAEc4\/RAT7dejvesk\/s1600\/rss.png\" style=\"margin-right:1px;\" alt=\"Icon\"\/><\/a> <!--End Rss Icon--> <!--Start Facebook Icon--> <a rel=\"nofollow\" title=\"Like Our Facebook Page\" href=\"http:\/\/www.facebook.com\/"+ fburl +"\" target=\"_blank\"><img border=\"0\" src=\"http:\/\/4.bp.blogspot.com\/-Kre3jOLifUo\/UgXVgZvwU_I\/AAAAAAAAEco\/xgQfAHtN3F4\/s1600\/facebook.png\" style=\"margin-right:1px;\" alt=\"Icon\"\/><\/a> <!--End Facebook Icon--> <!--Start Twitter Icon--> <a rel=\"nofollow\" title=\"Follow Our Updates On Twitter\" href=\"http:\/\/twitter.com\/"+ twitterurl +"\" target=\"_blank\"><img border=\"0\" src=\"http:\/\/4.bp.blogspot.com\/-GGO-gaQrAQE\/UgXVhUnOKcI\/AAAAAAAAEc8\/i-R6BGdlg0w\/s1600\/twitter.png\" style=\"margin-right:1px;\" alt=\"Icon\"\/><\/a> <!--End Twitter Icon--> <!--Start Google+ Icon--> <!--Start Email Rss Icon--> <a rel=\"nofollow\" title=\"Get Free Updates Via Email\" href=\"http:\/\/www.youtube.com\/"+ youtube +"\" target=\"_blank\"> <img border=\"0\" src=\"http:\/\/1.bp.blogspot.com\/-cALozZynbU0\/UgXVhrHAtGI\/AAAAAAAAEdI\/mPQby7zsqWc\/s1600\/youtube.png\" style=\"margin-right:1px;\" alt=\"Icon\"\/><\/a> <!--End Email Rss Icon--> <a title=\"Follow Us On Google+\" rel=\"nofollow\" href=\"https:\/\/plus.google.com\/"+ gplusurl +"\/\" target=\"_blank\"> <img style=\"margin-right:1px;\" src=\"http:\/\/1.bp.blogspot.com\/-mWCTXZv28jo\/UgXVgTDsMSI\/AAAAAAAAEcs\/efi1mpq-jm4\/s1600\/googleplus.png\"\/> <\/a> <!--End Google+ Icon-->";
+widget.value += " <\/div><br\/> <\/center>";
+widget.value += "";
+
+
+}
+</script>
+<div id="tvbgadmn">
+<fieldset class="redius" style="border: 2px solid #a32b33;">
+<legend class="redius" align="center" style="border: 0px solid #a32b33; padding: 
+3px 10px; margin-  left: 20px;"><center> Rotating Social Media Widget Generator For Blogger </center> </legend> 
+</br>
+<style>
+.input-text,.text-input, .select-box{
+ margin:0 2px;
+ padding:4px 6px;
+ border: 1px solid #a32b33;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ font-family: gergia;
+ font-style: italic;
+ -webkit-box-shadow: 4px 4px 4px #FEF4F4;
+ -moz-box-shadow: 4px 4px 4px #FEF4F4;
+ box-shadow: 4px 4px 4px #FEF4F4;
+ font-size: 14px;
+ color: #666;
+ max-width:auto;
+}
+.textarea-box, .textareaBox{
+ border:1px solid #a32b33;
+ padding:6px;
+ -webkit-resize: none;
+ -moz-resize: none;
+ resize: none;
+ -webkit-box-shadow: 4px 4px 4px #dfdfdf;
+ -moz-box-shadow: 4px 4px 4px #dfdfdf;
+ box-shadow: 4px 4px 4px #dfdfdf;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ border-radius: 8px;
+}
+.redius{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; }
+}
+#tvbgadform {
+  font-family: Georgia, serif;
+}
+
+#tvbgadmn fieldset {
+  border: 1px solid #004000;
+	background: #FEF4F4;
+	padding: 0 20px;
+}
+
+#tvbgadmn legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#tvbgad fieldset {
+	border: 1px solid #004000;
+	background: #FEFFBF;
+	padding: 0 20px;
+}
+#tvbgad legend {
+	background: #a32b33;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+</style>
+<div id="tvbgad">
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Customize</legend>
+
+<table width='100%'>
+<tr>
+<td width='40%'>FaceBook Page ID</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='fburl' 
+
+value='tipsviablogging' size='25'></td>
+</tr>
+
+<tr>
+<td width='40%'>Twitter Username</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='twitterurl' value='tipsviablogging' size='25'></td>
+</tr>
+
+<tr>
+<td width='40%'>Google + ID</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='gplusurl' value='108949096200367463694' size='25'></td>
+</tr>
+
+
+<tr>
+<td width='40%'>Youtube User Name</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='youtube' value='tipsviablogging' size='25'></td>
+</tr>
+
+
+<tr>
+<td width='40%'>Rss Feedburner User ID</td>
+<td width='60%'>: <input class='input-text' type='text' id='twit' name='rssurl' value='tipsviablogging' size='25'></td>
+</tr>
+<tr></tr><tr></tr><tr></tr>
+</table>
+</fieldset>
+<br/>
+
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Application / Buttons</legend> </br>
+<center>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank">
+
+<input value='Generate' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:tvbcodegen();'/>
+
+<input style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' disabled="disabled" name="go" value="Add to Blogger" type="submit">
+
+
+
+</center>
+
+</fieldset>
+<br/>
+
+<fieldset class="redius" style="border: 1px solid #a32b33;"><legend class="redius" 
+
+align="left" style="border: 1px solid #a32b33; padding: 4px 11px; margin-  left: 
+
+20px;">Code / Demo</legend>
+<br/>
+<textarea class='textarea-box' name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style=' background:#ffffff;width:100%;height:75px;'>
+</textarea>
+<input name="infoUrl" type="hidden" value="http://www.tipsviablogging.com/" />
+<input name="logoUrl" type="hidden" value="http://4.bp.blogspot.com/-wHPvydOdVqU/UDEdJCcy6fI/AAAAAAAABOQ/t36cmCCBn4k/s1600/TVB+.png" />
+</form>
+<br/><br/></div>
+<br/>
+<center><small> Copyright © 2012 All Rights Reserved by Umesh Tarsariya @ <a href="http://www.TipsViaBlogging.com/">Tips Via Blogging</a></small></center>
+</div></div>
+</fieldset>
+</fieldset>
+</body>
+</html>
+
