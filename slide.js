@@ -14,6 +14,8 @@ $(document).ready(function() {
 	// Switch buttons from "Log In | Register" to "Close Panel" on click
 	$("#toggle a").click(function () {
 		$("#toggle a").toggle();
-	});		
-		
+	});	
+	
+$("head").append("<link rel='stylesheet' type='text/css' href='http://tipsviablogging.github.io/slidestyle.css'/>");
+$("document").ready(init);		
 });
